@@ -18,6 +18,8 @@ ln -fs ../../../../usr/lib/systemd/system/sharp-init.service $1/etc/systemd/syst
 
 ln -fs ../../../../usr/lib/systemd/system/app.service $1/etc/systemd/system/sysinit.target.wants/app.service
 
+ln -fs ../../../../usr/lib/systemd/system/update.service $1/etc/systemd/system/sysinit.target.wants/update.service
+
 #ln -fs ../../../../usr/lib/systemd/system/shutdown.service $1/etc/systemd/system/halt.target.wants/shutdown.service
 
 #ln -fs ../../../../usr/lib/systemd/system/shutdown.service $1/etc/systemd/system/poweroff.target.wants/shutdown.service
@@ -25,7 +27,7 @@ ln -fs ../../../../usr/lib/systemd/system/app.service $1/etc/systemd/system/sysi
 
 rm -rf $1/var/log/journal
 
-#rm -r $1/etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service.
+#rm -r $1/etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service
 
-#rm -r $1/etc/systemd/system/dbus-org.freedesktop.timesync1.service
+#rm -r $1/etc/systemd/system/multi-user.target.wants/dhcpcd.service
 
