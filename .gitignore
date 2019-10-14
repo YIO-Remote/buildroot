@@ -15,3 +15,9 @@
 *.pyc
 board/yio-remote/rpi0/rootfs_overlay/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 configs/yio-remote-defconfig.old
+### OSX ###
+.DS_Store
+# Thumbnails
+._*
+### Linux ###
+*~
